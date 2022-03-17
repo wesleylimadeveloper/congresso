@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@font-face {
+    font-family: SF Pro Display;
+    src: url('../fonts/SF-Pro-Display-Black.otf');
+}
+
+@font-face {
+    font-family: SF C Display;
+    src: url('../fonts/SF-Compact-Display-Ultralight.otf');
+}
+
+@font-face {
+    font-family: SF C Display B;
+    src: url('../fonts/SF-Compact-Display-Bold.otf');
+}
+
 body, html {
     background-attachment: fixed;
     background-image: url('../img/background.jpg');
@@ -9,11 +24,11 @@ body, html {
     margin: 0;
 }
 
-.abqm-logo-container {
+.abqm-logo {
     height: 200px;
 }
 
-.abqm-logo {
+.abqm-logo img {
     height: 100px;
     margin-left: 120px;
     margin-top: 20px;
@@ -27,7 +42,7 @@ body, html {
     margin-bottom: 150px;
 }
 
-.side-buttons-container {
+.sidebar {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -35,21 +50,24 @@ body, html {
     max-width: 300px;
 }
 
-.side-button {
-    background-color: #c9d3d5;
+.sidebar button {
+    background-color: #00943e;
     border: none;
     border-bottom-right-radius: 50px;
     border-top-right-radius: 50px;
-    color: #395871;
+    color: #fff;
+    cursor: pointer;
     font-family: 'Bebas Neue';
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
     padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 50px;
     padding-top: 15px;
 }
 
-.congresso-logo-container {
+.congresso-logo {
     align-items: flex-start;
     display: flex;
     flex-grow: 1;
@@ -58,34 +76,36 @@ body, html {
     margin-top: -20px;
 }
 
-.congresso-logo {
+.congresso-logo img {
     height: 231px;
     width: 500;
 }
 
-.menu-buttons-container {
+.center-buttons {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 120px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.menu-button {
-    background-color: #c9d3d5;
-    border: 1px solid #395871;
+.center-buttons button {
+    background-color: #00943e;
+    border: none;
     border-radius: 5px;
-    color: #395871;
-    font-family: 'Bebas Neue';
+    color: #fff;
+    cursor: pointer;
+    font-family: 'SF C Display B';
     font-size: 16px;
+    font-weight: bold;
     letter-spacing: 1px;
     padding-bottom: 15px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
     padding-top: 15px;
 }
 
-.news-container {
+.live-transmission {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -93,44 +113,44 @@ body, html {
 }
 
 h2 {
-    color: #395871;
-    font-family: 'Bebas Neue';
+    color: #00943e;
+    font-family: 'SF C Display';
     font-size: 22px;
     letter-spacing: 10px;
 }
 
-.live-text {
-    color: #395871;
-    font-family: 'Bebas Neue';
+.big-text {
+    color: #00943e;
+    font-family: 'SF Pro Display';
     font-size: 86px;
     letter-spacing: 1px;
-    margin-top: -25px;
+    margin-top: -35px;
 }
 
-.video {
+.video-transmission {
     border: 8px solid #abb8c1;
-    height: 300px;
-    margin-top: -90px;
-    width: 600px;
+    height: 500px;
+    margin-top: -80px;
+    width: 1000px;
 }
 
 .last-news-text {
-    color: #395871;
+    color: #00943e;
     font-family: 'Bebas Neue';
     font-size: 36px;
     letter-spacing: 2px;
     text-align: center;
 }
 
-.last-news-container {
+.last-news {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.last-news {
+.last-news div {
     border: 8px solid #abb8c1;
-    height: 300px;
+    height: 250px;
     margin-bottom: 120px;
     margin-left: 40px;
     margin-right: 40px;
@@ -138,6 +158,222 @@ h2 {
 }
 
 footer {
-    background-color: #c9d3d5;
-    height: 200px;
+    background-color: #00943e;
+    color: #fff;
+    font-family: 'SF C Display B';
+    font-size: 18px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.organizers-container {
+    background-color: #edeef0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.achievement {
+    width: 200px;
+    margin-right: 100px;
+}
+
+hr {
+    border-color: #000;
+    border-width: 1px;
+    margin-top: -15px;
+}
+
+.abqm-logo-footer {
+    height: 100px;
+    width: 167px;
+}
+
+.sponsorships {
+    width: 380px;
+}
+
+h3 {
+    color: #000;
+    font-family: 'Bebas Neue';
+    letter-spacing: 1px;
+}
+
+.vetnil-logo {
+    height: 100px;
+    width: 141px;
+    margin-right: 100px;
+}
+
+.guabi-equinos-logo {
+    height: 100px;
+    width: 134px;
+}
+
+.social-medias {
+    display: flex;
+    justify-content: center;
+}
+
+.social-medias img {
+    color: #fff;
+}
+
+@media only screen and (max-width: 1550px) {
+    .center-buttons button {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .center-buttons button {
+        font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .video-transmission {
+        height: 400px;
+        width: 800px;
+    }
+
+    .last-news div {
+        height: 200px;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .center-buttons button {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    h2 {
+        font-size: 18px;
+    }
+    
+    .big-text {
+        font-size: 76px;
+        margin-top: -30px;
+    }
+    
+    .video-transmission {
+        height: 350px;
+        margin-top: -75px;
+        width:700px;
+    }
+
+    .last-news div {
+        border: 8px solid #abb8c1;
+        height: 175px;
+        margin-bottom: 120px;
+        margin-left: 40px;
+        margin-right: 40px;
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .abqm-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .congresso-logo {
+        display: flex;
+        margin: auto;
+        margin-top: -20px;
+    }
+
+    .center-buttons {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 120px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: -200px;
+    }
+
+    .center-buttons button {
+        background-color: #00943e;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-family: 'SF C Display B';
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        padding-bottom: 15px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 15px;
+    }
+    
+    .last-news {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .last-news div {
+        border: 8px solid #abb8c1;
+        height: 200px;
+        margin-bottom: 20px;
+        width: 400px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+
+    .organizers-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .center-buttons button {
+        background-color: #00943e;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-family: 'SF C Display B';
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        padding-bottom: 15px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 15px;
+    }
+
+    .video-transmission {
+        height: 275px;
+        width: 550px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    footer {
+        font-size: 12px;
+    }
 }
