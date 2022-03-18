@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: Bebas Neue;
+    src: url('../font/BebasNeue-Bold.ttf');
+}
 
 @font-face {
     font-family: SF Pro Display;
-    src: url('../fonts/SF-Pro-Display-Black.otf');
+    src: url('../font/SF-Pro-Display-Black.otf');
 }
 
 @font-face {
     font-family: SF C Display;
-    src: url('../fonts/SF-Compact-Display-Ultralight.otf');
+    src: url('../font/SF-Compact-Display-Ultralight.otf');
 }
 
 @font-face {
     font-family: SF C Display B;
-    src: url('../fonts/SF-Compact-Display-Bold.otf');
+    src: url('../font/SF-Compact-Display-Bold.otf');
 }
 
 body, html {
@@ -65,6 +68,7 @@ body, html {
     padding-left: 20px;
     padding-right: 50px;
     padding-top: 15px;
+    text-transform: uppercase;
 }
 
 .congresso-logo {
@@ -77,8 +81,8 @@ body, html {
 }
 
 .congresso-logo img {
-    height: 231px;
-    width: 500;
+    height: 278px;
+    width: 600px;
 }
 
 .center-buttons {
@@ -103,6 +107,7 @@ body, html {
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 15px;
+    text-transform: uppercase;
 }
 
 .live-transmission {
@@ -168,9 +173,12 @@ footer {
 
 .organizers-container {
     background-color: #edeef0;
+    color: #000;
     display: flex;
     flex-direction: row;
+    font-family: 'Bebas Neue';
     justify-content: center;
+    letter-spacing: 1px;
 }
 
 .achievement {
@@ -191,12 +199,6 @@ hr {
 
 .sponsorships {
     width: 380px;
-}
-
-h3 {
-    color: #000;
-    font-family: 'Bebas Neue';
-    letter-spacing: 1px;
 }
 
 .vetnil-logo {
@@ -220,6 +222,10 @@ h3 {
 }
 
 @media only screen and (max-width: 1550px) {
+    .congresso-logo {
+        margin-left: -600px;
+    }
+
     .center-buttons button {
         padding-left: 30px;
         padding-right: 30px;
@@ -375,5 +381,12 @@ h3 {
 @media screen and (max-width: 650px) {
     footer {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .video-transmission {
+        height: 225px;
+        width: 450px;
     }
 }
